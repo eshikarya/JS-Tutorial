@@ -196,3 +196,51 @@ else{
 }
 
 */
+
+
+/* 
+
+//EQUALITY OPERATORS: == vs ===
+
+*/
+
+const age = 18;
+
+if (age === 18) console.log(`You just became an adult! (strict equality operator)`);
+if (age == 18) console.log(`You just became an adult! (loose equality operator)`);
+
+// '18' == 18 //true
+// '18' === 18 //false
+
+
+const favourite = Number(prompt("What is your favourite number?"))
+console.log(favourite);
+console.log(typeof favourite);
+
+//'23' == 23;
+if (favourite == 23) console.log(`cool, ${favourite} is an amazing number!`)
+
+// '23'! = 23
+if (favourite === 23) console.log(`cool, ${favourite} is an amazing number!`)
+
+//23 === 23
+if (favourite === 23) {
+    console.log(`cool, ${favourite} is an amazing number!`);
+}
+
+
+
+if (favourite === 23) {
+    console.log(`cool, ${favourite} is an amazing number!`);
+}
+else if (favourite === 7) {
+    console.log(`7 is also a cool number`);
+}
+else {
+    console.log(`Number is not 23 or 7`)
+}
+
+
+if (favourite !== 23) {
+    console.log(`Why not 23?`);
+}
