@@ -124,6 +124,9 @@ else{
 }
 */
 
+
+
+/*
 //type conversion
 const inputYear = '1991';
 console.log(Number(inputYear),inputYear);
@@ -149,3 +152,47 @@ console.log(n);
 
 console.log(2+3+5+'4');
 console.log('10'-'4'-'3'-2+'5');
+
+*/
+
+
+/*
+
+
+//Truthy and Falsy Values
+
+// 5 falsy values: 0, '', undefined, NaN, null
+
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean(null));
+console.log(Boolean(''));
+console.log(Boolean(NaN));
+console.log(Boolean(1));
+console.log(Boolean('hello'));
+console.log(Boolean({}));
+
+
+const money = 0;
+if(money){
+    console.log(`Don't spend it all!`);
+}
+else{
+    console.log(`You should get a job!`);
+}
+    
+
+
+let height;
+// let height = 0;
+// let height = 20;
+
+if(height===0||height){
+    console.log('yay! height is defined');
+}
+else{
+    console.log('height is UNDEFINED');
+}
+
+*/
