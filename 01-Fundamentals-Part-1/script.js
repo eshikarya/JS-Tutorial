@@ -249,3 +249,30 @@ if (favourite !== 23) {
 
 /* */
 
+// LOGICAL OPERATORS
+
+const hasDriversLicense = true;
+const hasGoodVision = true;
+
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+// if(hasDriversLicense && hasGoodVision){
+//     console.log(`Sara can drive`);
+// }
+// else{
+//     console.log(`Someone else should drive`);
+// }
+
+const isTired = false;
+
+console.log(hasDriversLicense && hasGoodVision && isTired);
+
+
+if(hasDriversLicense && hasGoodVision && !isTired){
+    console.log(`Sara can drive`);
+}
+else{
+    console.log(`Someone else should drive`);
+}
