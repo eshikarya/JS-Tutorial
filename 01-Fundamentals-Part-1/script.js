@@ -247,7 +247,7 @@ if (favourite !== 23) {
 */
 
 
-/* */
+/* 
 
 // LOGICAL OPERATORS
 
@@ -276,3 +276,33 @@ if(hasDriversLicense && hasGoodVision && !isTired){
 else{
     console.log(`Someone else should drive`);
 }
+
+*/
+
+/* */
+
+// SWITCH STATEMENT
+
+const day = `wednesday`;
+
+switch (day) { //day === 'monday'
+    case `monday`:
+        console.log('Plan course structure');
+        break;
+    case `tuesday`:
+    case `wednesday`:
+        console.log(`Prepare theory videos`);
+        break;
+    case `thursday`:
+        console.log('Write code examples');
+        break;
+    case `friday`:
+        console.log('Record videos');
+        break;
+    case 'saturday':
+    case 'sunday':
+        console.log('Relax');
+        break;
+    default:
+        console.log('Invalid day');
+    }
