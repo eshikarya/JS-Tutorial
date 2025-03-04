@@ -309,7 +309,7 @@ switch (day) { //day === 'monday'
     */
 
 
-/**/
+/*
 
 // TERNARY OPERATORS
 
@@ -322,3 +322,7 @@ const vehicle = age >= 18 ? 'car' : 'bicycle';
 console.log(vehicle);
 
 console.log(`I like to drive ${age >= 18 ? 'car' : 'bicycle'}`);
+
+*/
+
+
