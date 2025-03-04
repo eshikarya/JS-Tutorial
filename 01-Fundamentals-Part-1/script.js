@@ -39,7 +39,7 @@ console.log(typeof year); //undefined
 year = 1991;
 console.log(typeof year);
 
-console.log(typeof null); //object 
+console.log(typeof null); //object
 // this is a bug (typeof null) === never corrected due to legacy reasons.
 
 */
@@ -57,7 +57,7 @@ const birthYear = 1991;
 var job = 'programmer'; // legacy way - to be avoided
 job = 'teacher';
 
-city = 'Pune'; // not advised 
+city = 'Pune'; // not advised
 console.log(city);
 
 */
@@ -130,7 +130,7 @@ else{
 //type conversion
 const inputYear = '1991';
 console.log(Number(inputYear),inputYear);
-console.log(Number(inputYear)+18); 
+console.log(Number(inputYear)+18);
 
 console.log(Number('Jane'));
 console.log(typeof NaN);
@@ -181,7 +181,7 @@ if(money){
 else{
     console.log(`You should get a job!`);
 }
-    
+
 
 
 let height;
@@ -198,7 +198,7 @@ else{
 */
 
 
-/* 
+/*
 
 //EQUALITY OPERATORS: == vs ===
 
@@ -247,7 +247,7 @@ if (favourite !== 23) {
 */
 
 
-/* 
+/*
 
 // LOGICAL OPERATORS
 
@@ -279,7 +279,7 @@ else{
 
 */
 
-/* */
+/*
 
 // SWITCH STATEMENT
 
@@ -306,3 +306,19 @@ switch (day) { //day === 'monday'
     default:
         console.log('Invalid day');
     }
+    */
+
+
+/**/
+
+// TERNARY OPERATORS
+
+const age = 23;
+
+age >= 18 ? console.log('car') : console.log('bicycle');
+
+
+const vehicle = age >= 18 ? 'car' : 'bicycle';
+console.log(vehicle);
+
+console.log(`I like to drive ${age >= 18 ? 'car' : 'bicycle'}`);
