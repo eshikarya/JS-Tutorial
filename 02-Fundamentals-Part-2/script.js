@@ -19,7 +19,7 @@ if (hasDriversLicense) console.log('I can drive');
 
 // FUNCTIONS
 
-
+/*
 
 function logger(){
     console.log(`I'm Jane Doe.`);
@@ -43,4 +43,40 @@ const mixedJuice = fruitProcessor(2,5);
 console.log(mixedJuice);
 
 console.log(fruitProcessor(1,6));
+
+*/
+
+
+
+/* */
+// Function declaration vs expression
+
+
+//function declaration
+
+
+// const age1 = calcAge1(1999);
+//function can be called before function declaration
+
+function calcAge1(birthYear){
+    return 2025 - birthYear;
+}
+
+const age1 = calcAge1(1999);
+
+console.log(age1);
+
+
+//function expression --- anonymous function
+
+// const age2 = calcAge2(1999);
+// Cannot access 'calcAge2' before initialization
+
+const calcAge2 = function (birthYear){
+    return 2025 - birthYear;
+}
+
+const age2 = calcAge2(1999);
+
+console.log(age1,age2);
 
