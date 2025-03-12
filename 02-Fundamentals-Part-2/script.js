@@ -84,7 +84,7 @@ console.log(age1,age2);
 
 
 
-/* */
+/* 
 
 // Arrow Function
 const calcAge3 = birthYear => 2025-birthYear;
@@ -101,3 +101,23 @@ const yearsUntilRetirement = (birthYear,firstName) =>{
 }
 
 console.log(yearsUntilRetirement(1999));
+*/
+
+
+//FNS CALLING OTHER FNS
+
+/* */
+
+const cutPieces = function(fruit){
+    return fruit*4;
+};
+
+const fruitProcessor = function(apples,oranges){
+    const applePieces = cutPieces(apples);
+    const orangePieces = cutPieces(oranges);
+
+    const juice = `Juice with ${applePieces} pieces of apple and ${orangePieces} pieces of orange.`
+    return juice;
+};
+
+console.log(fruitProcessor(2,3));
