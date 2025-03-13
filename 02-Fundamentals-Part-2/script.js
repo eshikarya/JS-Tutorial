@@ -106,7 +106,7 @@ console.log(yearsUntilRetirement(1999));
 
 //FNS CALLING OTHER FNS
 
-/* */
+/* 
 
 const cutPieces = function(fruit){
     return fruit*4;
@@ -121,3 +121,84 @@ const fruitProcessor = function(apples,oranges){
 };
 
 console.log(fruitProcessor(2,3));
+*/
+
+
+
+// Introduction to Arrays
+
+//first way to create array --- literal syntax
+const friends = ['Alex','Jane','Joe'];
+console.log(friends);
+
+
+//second way to create array
+const year = new Array(1990,1995,2000,2005,2010);
+// console.log(years);
+
+
+console.log(friends[0]);
+console.log(friends.length);
+console.log(friends[friends.length-1]);
+
+friends[2] = "Ray";
+console.log(friends);
+
+const jonas = ['Jonas','Doe',2025-1991,'teacher',friends];
+console.log(jonas);
+console.log(jonas.length);
+
+
+//Exercise
+const calcAge = function (birthYear){
+    return 2025 - birthYear;
+}
+
+const years = [1990,1965,2000];
+
+// console.log(calcAge(years));
+
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[years.length-1]);
+
+console.log(age1,age2,age3);
+
+const ages = [calcAge(years[0]),calcAge(years[1]),calcAge(years[years.length-1])];
+console.log(ages);
+
+
+// Basic Array Methods
+
+
+const friends = ['Alex','Jane','Joe'];
+
+
+//add elements
+const newLength = friends.push('Hannah');
+console.log(friends);
+
+friends.unshift('John');
+console.log(friends);
+
+
+//remove elements
+const poppedElement = friends.pop(); //last element
+console.log(friends);
+console.log(poppedElement);
+
+friends.shift(); //first element
+console.log(friends);
+
+console.log(friends.indexOf('Alex'));
+console.log(friends.indexOf('Mary')); //-1
+
+
+
+//.includes uses strict equality to check if element is present in array
+friends.push(23);
+console.log(friends.includes('Alex')); //true
+console.log(friends.includes('Mary')); //false
+console.log(friends.includes('23')); //false -- type conversion not done 
+console.log(friends.includes(23)); //true
+
