@@ -123,7 +123,7 @@ const fruitProcessor = function(apples,oranges){
 console.log(fruitProcessor(2,3));
 */
 
-
+/* 
 
 // Introduction to Arrays
 
@@ -201,4 +201,25 @@ console.log(friends.includes('Alex')); //true
 console.log(friends.includes('Mary')); //false
 console.log(friends.includes('23')); //false -- type conversion not done 
 console.log(friends.includes(23)); //true
+
+*/
+
+
+/* */
+//OBJECTS
+
+const jane = {
+    firstName: 'Jane',
+    lastName: 'Doe',
+    age: 2025 - 1995,
+    job: 'teacher',
+    friends: [
+        'John',
+        'Jack',
+        'Mary'
+    ]
+};
+
+console.log(jane);
+
 
