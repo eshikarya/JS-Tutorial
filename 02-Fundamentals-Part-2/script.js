@@ -205,7 +205,7 @@ console.log(friends.includes(23)); //true
 */
 
 
-/* */
+
 //OBJECTS
 
 const jane = {
@@ -223,3 +223,37 @@ const jane = {
 console.log(jane);
 
 
+
+// dot vs bracket notations
+
+console.log(jane.lastName);
+console.log(jane['lastName']);
+
+//bracket notation can be used for handling expressions
+
+//  RETRIEVING OBJECTS
+//eg 1: concatenate
+const nameKey = 'Name';
+console.log(jane['first' + nameKey]);
+console.log(jane['last' + nameKey]);
+
+//eg 2: user defined input
+const interestedIn = prompt('What do you want to know about Jane? Choose between firstName,lastName,age,job,friends');
+
+// ----> console.log(jane.interestedIn)  ==== this will return undefined since no key with the name 'interestedIn' exists
+
+if (jane[interestedIn]) {
+    console.log(jane[interestedIn]); // here interestedIn is an expression which is evaluated and hence replaced by the value user enters.
+}
+else {
+    console.log('Wrong Request! Choose between firstName,lastName,age,job,friends');
+}
+
+
+// ADDING OBJECTS
+jane.location = 'Germany';
+jane['gender'] = 'female';
+
+console.log(jane);
+
+console.log(`${jane.firstName} has ${jane.friends.length} friends, and her best friend is ${jane.friends[0]}.`);
