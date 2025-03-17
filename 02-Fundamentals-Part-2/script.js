@@ -48,7 +48,7 @@ console.log(fruitProcessor(1,6));
 
 
 
-/* 
+/*
 // Function declaration vs expression
 
 
@@ -84,7 +84,7 @@ console.log(age1,age2);
 
 
 
-/* 
+/*
 
 // Arrow Function
 const calcAge3 = birthYear => 2025-birthYear;
@@ -205,7 +205,7 @@ console.log(friends.includes(23)); //true
 */
 
 
-
+/*
 //OBJECTS
 
 const jane = {
@@ -257,3 +257,48 @@ jane['gender'] = 'female';
 console.log(jane);
 
 console.log(`${jane.firstName} has ${jane.friends.length} friends, and her best friend is ${jane.friends[0]}.`);
+*/
+
+
+
+// OBJECT METHODS
+
+const jane = {
+    firstName:'Jane',
+    lastName:'Doe',
+    birthYear: 1995,
+    hasDriversLicense:true,
+    job:'teacher',
+    friends:['Manny','Bob','Alex'],
+
+    // calcAge:function(birthYear){
+    //     return 2025-birthYear;
+    // }
+
+    // calcAge:function(){
+    //     // console.log(this); // this is equal to "current object calling the method which in this case is JONAS"
+    //     return 2025-this.birthYear;
+    // }
+
+    calcAge:function(){
+        this.age = (2025-this.birthYear);
+        return this.age;
+    },
+
+    summary:function(){
+        
+        const finalString =  `${this.firstName} is a ${this.calcAge()}-years old ${this.job}, and she has ${this.hasDriversLicense? 'a':'no'} driver's license.`
+        
+        return finalString;
+    }
+
+};
+
+// console.log(jane.calcAge());
+// console.log(jane.age);
+
+console.log(jane.summary());
+
+
+
+
